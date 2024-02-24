@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    background-color: blue;
+    height: 100px;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .left-section {
+    display: flex;
+    background-color: forestgreen;
+    margin: 10px;
+    align-items: center;
+    margin-right: 30px;
+    flex-shrink: 0; /* Don't allow left-section to shrink */
+  }
+  
+  .center-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 10px;
+    background-color: rgb(139, 73, 34);
+    max-width: 500px;
+    margin-right: 30px;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+    background-color: rgb(139, 34, 113);
+    flex-shrink: 0; /* Don't allow right-section to shrink */
+  }
+  
+  .search-bar {
+    flex: 1;
+    height: 36px;
+    border-radius: 2px;
+    border-width: 1px;
+    box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.3);
+    width: 0;
+  }
+  
+  .search-button {
+    width: 60px;
+    height: 38px;
+    margin-right: 20px;
+    margin-left: -5px;
+    border: 0px;
+  }
+  
+  .search-icon {
+    height: 20px;
+    padding-top: 5px;
+  }
+  
+  .microphone-button {
+    width: 36px;
+    height: 36px;
+    padding-top: 5px;
+    border: 0px;
+    border-radius: 50px;
+  }
+  
+  .menu {
+    height: 30px;
+  }
+  
+  .youtube,
+  .apps-icon,
+  .upload-icon,
+  .notifications-icon,
+  .login-profile-icon, menu {
+    height: 25px;
+    margin-left: 15px;
+  }
+  
+  .login-profile-icon {
+    height: 35px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    margin-right: 15px;
+  }
