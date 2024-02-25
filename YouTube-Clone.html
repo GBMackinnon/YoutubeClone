@@ -5,106 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link href="Styles/header.css" rel="stylesheet">
+    <link href="Styles/sidebar.css" rel="stylesheet">
     <link href="Styles/videoPreview.css" rel="stylesheet">
+    <link href="Styles/general.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
-
-<style>
-    .flex-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 55px;
-    margin-bottom: 20px;
-}
-
-.left-section{
-    background-color: rgb(255, 255, 255);
-    /* We want this width to remain static when reized*/
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-}
-
-.center-section{
-    background-color: rgb(49, 255, 30);
-    margin-left: 70px;
-    margin-right: 30px;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
-}
-
-.right-section{
-    display: flex;
-    width: 300px;
-    min-width: 200px;
-    justify-content: space-around;
-    align-content: center;
-    background-color: rgb(49, 255, 30);
-    margin-left: 70px;
-}
-
-
-.menu, .youtube-logo{
-    height: 35px;
-    margin-left: 20px;
-}
-
-.search-button{
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.microphone-button{
-    height: 40px;
-    width: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    border: 0px;
-    padding-top: 5px;
-    margin-left: 15px;
-}
-
-
-
-.search-bar{
-    /* We want this width to change when reized*/
-    flex: 1;
-}
-
-.apps, .upload, .notifications, .profile-picture{
-    width: 40px;
-    background-color: rgb(146, 16, 16);
-}
-
-.ninja-picture > img{
-    width: 40px;
-    border-radius: 50px;
-}
-</style>
-
-
-
-
 <body>
-
-
-
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box1"></div>
-        <div class="box"></div>       
-        <div class="right-section"></div>
+        <div class="left-section">
+            <img class="menu" src="Pictures/Icons/hamburger-menu.svg" alt="YouTube Home"/> 
+            <img class="youtube"src="Pictures/Icons/youtube-logo.svg" />
+        </div>
+        <div class="center-section">
+            <input class="search-bar" type="text" placeholder="Search"/>
+            <button class="search-button">
+                <img class="search-icon" src="Pictures/Icons/search.svg" alt="Search">
+            </button>
+            <button class="microphone-button">
+                <img src="Pictures/Icons/voice-search-icon.svg" alt="Search with your voice"/>
+            </button>
+        </div>  
+        <div class="right-section">
+            <img class="apps-icon" src="Pictures/Icons/youtube-apps.svg" alt="Apps"/>
+            <img class="upload-icon" src="Pictures/Icons/upload.svg" alt="Upload"/>
+            <img class="notifications-icon" src="Pictures/Icons/notifications.svg" alt="Notifications"/>   
+            <img class="login-profile-icon" src="Pictures/ProfilePicture/Ninja.jpeg" alt="profile-picture"/>         
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <img class="sidebar-icon" src="Pictures/Icons/home.svg" alt="Apps"/>
+            <p class="sidebar-text">Home</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icon" src="Pictures/Icons/explore.svg" alt="Apps"/>
+            <p class="sidebar-text">Explore</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icon" src="Pictures/Icons/subscriptions.svg" alt="Apps"/>
+            <p class="sidebar-text">Subscriptions</p>
+        </div>         
+        <div class="sidebar-link">
+            <img class="sidebar-icon" src="Pictures/Icons/originals.svg" alt="Apps"/>
+            <p class="sidebar-text">Originals</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icon" src="Pictures/Icons/youtube-music.svg" alt="Apps"/>
+            <p class="sidebar-text">Youtube Music</p>
+        </div>
+        <div class="sidebar-link">
+            <img class="sidebar-icon" src="Pictures/Icons/library.svg" alt="Apps"/>
+            <p class="sidebar-text">library</p>
+        </div>
+        
     </div>
 
     <div class="videos-container">
